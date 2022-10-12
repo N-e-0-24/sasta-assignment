@@ -1,0 +1,12 @@
+.Home_StockData{
+    border-radius: 1em;
+    height: 5em;
+    width: 35em;
+    background-color: #0F3460;
+    margin-top: 1em;
+}
+
+.Home{
+    text-align: center;
+    margin: 2px auto;
+}
