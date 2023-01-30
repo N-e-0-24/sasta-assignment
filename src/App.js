@@ -1,17 +1,26 @@
+import React from 'react'
+import Header from './Components/Header'
+import Expense from './Components/Expense';
+import Income from './Components/Income';
+import Transaction from './Components/Transaction';
+import AddT from './Components/AddT';
+import { GlobalProvider } from './Components/context/GlobalState';
 import './App.css';
-import { Route, Routes } from "react-router";
-import Home from './Home';
-import View from './View';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/view' element={<View/>}/>
-      </Routes>
+   
+    <div className="container">
+      <GlobalProvider/>
+      <Header/>  <Expense/>
+      <Income/>
+      
+      <Transaction/>
+      <AddT/>
     </div>
-  );
+    
+  )
 }
 
-export default App;
+export default App
+
+
